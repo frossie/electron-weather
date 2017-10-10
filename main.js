@@ -49,11 +49,12 @@ const getWindowPosition = () => {
 const createWindow = () => {
   window = new BrowserWindow({
     
-    
+	  width: 300,
+	  height: 450,    
     show: false,
     frame: false,
     fullscreenable: false,
-    resizable: false,
+    resizable: true,
     transparent: true,
     webPreferences: {
       // Prevents renderer process code from not running when window is
